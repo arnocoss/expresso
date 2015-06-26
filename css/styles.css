@@ -1,0 +1,327 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@font-face {
+    font-family: 'BuffaloStance';
+    src: url('../fonts/bs-webfont.eot');
+    src: url('../fonts/bs-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bs-webfont.woff2') format('woff2'),
+         url('../fonts/bs-webfont.woff') format('woff'),
+         url('../fonts/bs-webfont.ttf') format('truetype'),
+         url('../fonts/bs-webfont.svg#buffalostanceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+    -webkit-font-smoothing: antialiased;
+    font: normal 14px arial,sans-serif;
+}
+
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+    overflow: auto;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+.logo-margin{
+    margin-top: 175px;
+}
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+
+#wrap > .container.home-intro{
+    padding: 0 0 50px 0;
+}
+
+.container .credit {
+  margin: 20px 0;
+}
+
+#footer {
+    background-color:#2e2e2e;
+    color:#ffffff;
+}
+
+#footer a {
+  color:#ffffff;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Roboto', serif;
+  vertical-align:middle;
+}
+
+header{
+    background: #433f3c;
+}
+
+header.desktop {
+    background-image:url("../images/fond-ardoise.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:550px;
+}
+
+header.whikies-rhum{
+    height:350px;
+  background: url('../images/headers/carte-whiskies-rhum.jpg') no-repeat center top fixed;
+    background-size: 100% auto;
+    /*no-repeat center center fixed !important; */
+/*
+    -webkit-background-size: cover !important;
+  	-moz-background-size: cover !important;
+  	-o-background-size: cover !important;
+  	background-size: cover !important;
+*/
+}
+header h1,header h2,header h3 a,header a,header a:hover {
+  color:#101010;
+  font-weight:800;
+  text-decoration:none;
+}
+
+header img.logo{
+    margin-top: 175px;
+}
+
+h1 {
+    font-size:50px;
+    font-style: italic;
+}
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+
+#footer > .container {
+  
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+.navbar-nav {
+  margin: 1px 1px; 
+}  
+  
+/* customize nav style */
+.navbar-custom {
+    background-color: #2e2e2e;
+	font-weight:700;
+    text-transform:uppercase;
+    border-width:0;
+}
+.navbar-custom  .navbar-nav>li>a {
+	color: #fff;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+	background-color: #c9d30e;
+    -webkit-transition: all .3s ease-in-out;
+}
+.navbar-custom .dropdown-menu{
+	right:0;
+}
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+	border-top-color: #999;
+	border-bottom-color: #999;
+}
+
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+	outline:0;
+}
+
+.divider {
+	height:100px;
+}
+
+.panel {
+	border-width:0;
+}
+
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #c9d30e;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#222;
+} 
+.scroll-top a:hover {
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+}
+
+section {
+  color: #ffffff;
+  min-height: 400px;
+  height: auto !important;
+  height: 100%;
+  padding-top:100px;
+}
+
+#section1,#section3 {
+    background: #c9d30e;
+}
+
+section div.push{
+    background-color:rgba(5,5,5,.8);
+    border: 3px solid #fff;
+    -webkit-transition: all .3s ease-in-out;
+    margin-top: 40px;
+    padding: 0px;
+    -webkit-transition: all .3s ease-in-out;
+}
+/*
+section div.push:hover{
+    padding: 5px;
+    -webkit-transition: all .3s ease-in-out;
+}
+*/
+
+section div.push h2{
+    font-family: BuffaloStance;
+    margin-bottom: 0px;
+}
+/*
+section div.push h2:hover{
+   margin-bottom: 5px;
+    -webkit-transition: all .3s ease-in-out;
+}
+*/
+section div.push h3{
+    margin-top: 0px;
+    font-size: 18px;
+    font-style: italic;
+}
+/*
+section div.push h3:hover{
+    margin-bottom: 15px;
+    -webkit-transition: all .3s ease-in-out;
+}
+*/
+
+section div.push:hover{
+    background: #c9d30e;
+    -webkit-transition: all .3s ease-in-out;
+}
+section a{
+    color: #fff;
+    text-decoration: none;
+}
+section a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.map{
+    margin-bottom: 60px;
+}
+
+.bg-1 {
+	background: url('../images/backgrounds/restaurant-bar.jpg') no-repeat center center fixed !important; 
+    -webkit-background-size: cover !important;
+  	-moz-background-size: cover !important;
+  	-o-background-size: cover !important;
+  	background-size: cover !important;
+}
+.bg-3 {
+	background: url('../images/backgrounds/cafe-gourmand.jpg') no-repeat center center fixed !important; 
+    -webkit-background-size: cover !important;
+  	-moz-background-size: cover !important;
+  	-o-background-size: cover !important;
+  	background-size: cover !important;
+}
+
+/*
+.bg-4 {
+	padding-top:30px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20,20,20,0.2)),to(rgba(255,255,255,0)), color-stop(1,#000));
+}
+*/
+
+/* Cartes*/
+body.carte section{
+    padding-top: 0px;
+    overflow: auto;
+}
+body.carte section:nth-of-type(odd){
+    background: #c9d30e;
+    color: #000;
+}
+body.carte section:nth-of-type(even){
+    color: #000;
+}
+body.carte section h2{
+    color: #fff;
+    border: 3px solid #fff;
+}
+body.carte section:nth-of-type(even) h2{
+    color: #000;
+    border: 3px solid #000;
+}
+body.carte section h3{
+    font-family: BuffaloStance;
+}
+
+body.carte section h4{
+    font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+	header {
+		height: 95px;
+	}
+    section {
+        min-height: 230px;
+        padding-top: 10px;
+    }
+    section div.push{
+        
+    }
+}
